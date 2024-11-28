@@ -8,11 +8,6 @@ from datetime import datetime
 from google.cloud import storage
 from PIL import Image
 import io
-datetime
-storage
-requests
-os
-streamlit_option_menu
 
 # Load credentials from secrets
 credentials_info = st.secrets["google_cloud"]["credentials_json"]
