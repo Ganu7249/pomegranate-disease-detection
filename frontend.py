@@ -26,7 +26,7 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "diseasedetectionkey.json"  # Ens
 st.set_page_config(page_title='Detect!t', page_icon="./letter-d.png", initial_sidebar_state="auto")
 
 # Google Cloud Storage configuration
-BUCKET_NAME = "pomegranate-detection-records"  # Your GCS bucket name
+BUCKET_NAME = "pomegranatedetectionrecords"  # Your GCS bucket name
 
 # Model file details
 model_file_url = "https://drive.google.com/uc?id=1z2STdgv4KQyLhdCDKZmLcBZHlgATa3fj"
