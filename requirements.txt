@@ -5,8 +5,8 @@ streamlit
 datetime
 streamlit_option_menu
 io
-PIL
+Pillow
 storage
-datetime
+google-cloud-storage
 requests
 os
