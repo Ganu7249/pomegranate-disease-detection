@@ -4,3 +4,9 @@ numpy
 streamlit
 time
 streamlit_option_menu
+io
+PIL
+storage
+datetime
+requests
+os
