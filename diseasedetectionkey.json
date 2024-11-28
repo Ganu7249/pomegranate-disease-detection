@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "skilled-eon-443107-v0",
+  "private_key_id": "a633e262a1a4199f68397bc5ec340de553298665",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCyIaaYvDM0uBjA\nCTLFvAspdsES1dfDkTbb21hWvRa0MhhY+Uf1WCLjBqnyo5465rISLVKwqNrIWZlh\ndNItD65p/XmrDZuJVEamkUlSDRfaTenw0aJ5rN/Dz5rWHQ8/JPlFXOLvwNk4J8Zn\np8Cai9qmSNUCNXhL+Zue2mJtd2//Z/EiMQXNtsTb13F1guUDVsyRqccF69pnG7si\nJSnYYjKfKo3O37s4foQAabrTee2UOZYMpSIx1ZMGg1ZZ+K3UacqjTI3IqkCfpxDD\nTPQl1jq9KOqSnzbjJAhlgJURVvkkRoS2Ndd1GpXre44urXAWApZjdQmLkftpFxn5\ncOb0OiRRAgMBAAECggEAAIYIC/KgqWbhnr3gLfPaqgto753ciZz9humnAbFCVfMA\nPpG0ABD7YESynu2Tb1uiehpzP+TtKLHXuTE7VWnSgsn9j67FbmLGpuJuL10tvOTl\n+0DYfAhRq40KiNbSxsYca/NlENyVntxCEWetMZ8X3E2CP8SJtxpzlkTQzX7Qf9UM\nfKTjtgmwYVw/laqgDommzt5lM+jbchJFZJWMwxolKdBDx2akzY+g2K94NlLmgNB4\noQ6lavl/D/Ga/HX8d63tMcqf/qhFFcPNWS9QOJ4IXc5coKYHVpR+A41EnCKb8gSY\nDOZ+F2dzfiwzH4dwF/+EyGPkzvvTUOHxfhJbJvTxqQKBgQDzbYUCqX30PLiR9AUx\nahHqYRH32WS6aSA4cqXYt4iFZK3tIeh+31eCaF54QKakNbcEP9SrMdmeX3wRDdje\nQM4pmtTmikkY5Ap3eMHejS4m1mHYrRuohR2kw83rV3RKq7eQgIFWM7gihaqI02qI\nVWj6BhyKnPU5uGYiohkCVii6aQKBgQC7VNDAnx8slvm75uGUJogJiN4m0L8ivruZ\neJXyu6MALh95anO5qs+/OZjE7LdGbP89NEbyGtgwiZE/j5ureSspzBJEsCgEolgr\nqllfHbfhnQvvKZWD7Em2IzvVi75b50/mwtrkElB63/7Pj1gBlkEw1gz6By/gz76W\nosy22WnNqQKBgQCSmSY9UC2WZOsSms51z9cyO3tCtB1BVgYdeI4AUadaDiPgZ0dJ\nAOAGnSwnZ2f0BJVPbdF5t+/CvOZOrvQoBQcjbydAH4+d+deD06mNiaB9qyYKA1Zg\nyqnrjC/6xxQ10+wcjgdWDpeZ0r284PWLXUR3Li8KGzRjqnV37f75tUGZ4QKBgB6b\nmRAf76QFdwBwlOLz+L42ErYc3V379AL7ZOSoK9XXs2TPM+FeO1tvObrTQo7LOFjz\ntbPRFwm3MHhGKpU10wudQE7gyWkYbXeU+c1EucqvMkf9b2SCsviDgT8++fdiL/fw\nVnt1UpkBCE05ipOXzUcBclVX30bIKsfKCdDGbTchAoGAUpQVm9mzpjn1VAfoG/Q1\nRrNEz0uLYYZkQZ7hat9hP2fc08gc8Y85RIuRE/v+O66m45GS83ZXL5/tXfE/tLe1\nlVOmUHvRrFsHGOXnYCgGPVeA2NfvqbGenD2ZSVMDuCFe2uCBtn9vR3Ef3lXQLhrX\na/9awZpS0Xcj9DJvnC1x0wE=\n-----END PRIVATE KEY-----\n",
+  "client_email": "disease-detection-upload-acces@skilled-eon-443107-v0.iam.gserviceaccount.com",
+  "client_id": "102191889855025501150",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/disease-detection-upload-acces%40skilled-eon-443107-v0.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
