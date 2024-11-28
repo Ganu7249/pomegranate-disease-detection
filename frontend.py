@@ -65,7 +65,7 @@ download_model_if_needed()
 
 # Sidebar menu
 with st.sidebar:
-    selected = option_menu("Main Menu", ['Disease Recognition'], 
+    selected = option_menu("Main Menu", ['Diseases Recognition'], 
                            icons=['house', 'book', 'clipboard-data', 'search'], 
                            menu_icon="cast", default_index=0)
     selected
