@@ -17,6 +17,7 @@ with open("diseasedetectionkey.json", "w") as temp_file:
     temp_file.write(credentials_info)
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "diseasedetectionkey.json"  # Ensure this path is correct
+st.write(st.secrets["google_cloud"]["credentials_json"])
 
 st.set_page_config(page_title='Detect!t', page_icon="./letter-d.png", initial_sidebar_state="auto")
 
