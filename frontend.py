@@ -44,7 +44,11 @@ st.markdown(
         border-radius: 10px;
     }
 
-    
+    [data-testid="stSidebar"] {
+        background: url('https://i.pinimg.com/736x/63/26/5c/63265c0085bc582df5798bc5f91c0824.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
     /* Transparent overlay for sidebar content */
     [data-testid="stSidebar"] > div:first-child {
         border-radius: 10px;
@@ -55,7 +59,7 @@ st.markdown(
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(255, 255, 255, 0.6); /* Light overlay for text readability */
+        background-color: rgba(255, 255, 255, 0.1); /* Light overlay for text readability */
         z-index: 1;
     }
     
