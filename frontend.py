@@ -45,7 +45,7 @@ st.markdown(
     }
 
     [data-testid="stSidebar"] {
-        background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIyiera68_uQbVQ5VCPVHqll5PxnIg4ziFcsLvClVngK0UBLrpJ04pl7DXlWrmuN5ncOk&usqp=CAU') no-repeat center center fixed;
+        background: url('https://i.pinimg.com/736x/63/26/5c/63265c0085bc582df5798bc5f91c0824.jpg') no-repeat center center fixed;
         background-size: cover;
     }
 
