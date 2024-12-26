@@ -110,8 +110,8 @@ with st.sidebar:
 
 # Main page
 if selected == "Disease Recognition":
-    st.header("Disease Recognition")
-    st.subheader("Test Your Fruit:")
+    st.header("Welcome to ADCET AgroCare ")
+    st.subheader("Test Your Pomegranate:")
     test_images = []
 
     option = st.selectbox('Choose an input Image option:',
