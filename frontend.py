@@ -54,6 +54,7 @@ st.markdown(
         background-color: rgba(255, 255, 255, 0.8);
         border-radius: 10px;
         padding: 10px;
+        filter: blur(8px);
     }
     
     .sidebar .sidebar-content {
