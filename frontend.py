@@ -43,6 +43,19 @@ st.markdown(
         padding: 20px;
         border-radius: 10px;
     }
+
+    [data-testid="stSidebar"] {
+        background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIyiera68_uQbVQ5VCPVHqll5PxnIg4ziFcsLvClVngK0UBLrpJ04pl7DXlWrmuN5ncOk&usqp=CAU') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    /* Transparent overlay for sidebar content */
+    [data-testid="stSidebar"] > div:first-child {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        padding: 10px;
+    }
+    
     .sidebar .sidebar-content {
         background: rgba(255, 255, 255, 0.9);
         border-radius: 10px;
