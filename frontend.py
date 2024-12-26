@@ -47,6 +47,8 @@ st.markdown(
     [data-testid="stSidebar"] {
         /*background: url('https://media.istockphoto.com/id/1406206642/photo/pomegranate-with-seeds-and-half-slice-flying-in-the-air-isolated-on-white.jpg?s=612x612&w=0&k=20&c=N5fBXomSgCGLaFok_3aK7o7i1-oWEEhaFEGvzZ7ZsBk=') no-repeat center center fixed;*/
         background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed
     }
 
     /* Transparent overlay for sidebar content */
