@@ -51,7 +51,7 @@ st.markdown(
 
     /* Transparent overlay for sidebar content */
     [data-testid="stSidebar"] > div:first-child {
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.4);
         border-radius: 10px;
         padding: 10px;
         filter: blur(8px);
