@@ -66,7 +66,7 @@ st.markdown(
     }
     
     .sidebar .sidebar-content {
-        background: rgba(255, 255, 255, 0.9);
+        background: rgba(255, 255, 255, 1.0);
         border-radius: 10px;
     }
     h1, h2, h3 {
