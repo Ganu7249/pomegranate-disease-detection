@@ -45,7 +45,7 @@ st.markdown(
     }
 
     [data-testid="stSidebar"] {
-        background: url('https://i.pinimg.com/736x/63/26/5c/63265c0085bc582df5798bc5f91c0824.jpg') no-repeat center center fixed;
+        background: url('https://img.khetivyapar.com/images/news/1704206783-pomagronet-tree-branch-garden.jpg') no-repeat center center fixed;
         background-size: cover;
     }
 
@@ -59,7 +59,7 @@ st.markdown(
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(255, 255, 255, 0.1); /* Light overlay for text readability */
+        background-color: rgba(255, 255, 255, 0.5); /* Light overlay for text readability */
         z-index: 1;
     }
     
