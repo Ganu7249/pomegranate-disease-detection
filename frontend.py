@@ -79,6 +79,31 @@ st.markdown(
         border-radius: 5px;
         font-size: 16px;
     }
+    /* Text Styling in Sidebar */
+    [data-testid="stSidebar"] h1, [data-testid="stSidebar"] h2, [data-testid="stSidebar"] h3, 
+    [data-testid="stSidebar"] label, [data-testid="stSidebar"] .css-1cpxqw2 {
+        color: #800000; /* Pomegranate red for headings */
+        font-weight: bold;
+    }
+
+    /* Buttons in Sidebar */
+    [data-testid="stSidebar"] .stButton>button {
+        background-color: #800000; /* Pomegranate red background */
+        color: white; /* White text for better visibility */
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        padding: 8px 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    [data-testid="stSidebar"] .stButton>button:hover {
+        background-color: #a00000; /* Slightly darker red on hover */
+    }
+
+
+    
     </style>
     """,
     unsafe_allow_html=True
