@@ -24,8 +24,8 @@ st.set_page_config(page_title='Detect!t', page_icon="./letter-d.png", initial_si
 BUCKET_NAME = "pomegranatedetectionrecords"  # Your GCS bucket name
 
 # Model file details
-model_file_url = "https://drive.google.com/uc?id=1z2STdgv4KQyLhdCDKZmLcBZHlgATa3fj"
-model_local_path = "Pomegranate_disease_model.h5"
+model_file_url = "https://drive.google.com/file/d/1342X6XILe7CLxPYBgTCDW_u50b796QQD/view?usp=drive_link"
+model_local_path = "MobilenetV2_model.h5"
 
 
 # Add custom CSS for background and styling
