@@ -53,7 +53,6 @@ st.markdown(
     [data-testid="stSidebar"] > div:first-child {
         border-radius: 10px;
         padding: 10px;
-        filter: blur(8px);
         content: "";
         position: absolute;
         top: 0;
@@ -65,7 +64,7 @@ st.markdown(
     }
     
     .sidebar .sidebar-content {
-        background: rgba(255, 255, 255, 1.0);
+        background: rgba(255, 255, 255, 1.9);
         border-radius: 10px;
     }
     h1, h2, h3 {
@@ -77,6 +76,7 @@ st.markdown(
         color: white;
         border-radius: 5px;
         font-size: 16px;
+        font-weight: bold;
     }
     /* Text Styling in Sidebar */
     [data-testid="stSidebar"] h1, [data-testid="stSidebar"] h2, [data-testid="stSidebar"] h3, 
@@ -91,6 +91,7 @@ st.markdown(
         color: white; /* White text for better visibility */
         font-size: 16px;
         border: none;
+        font-weight: bold;
         border-radius: 5px;
         padding: 8px 16px;
         cursor: pointer;
