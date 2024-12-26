@@ -27,6 +27,44 @@ BUCKET_NAME = "pomegranatedetectionrecords"  # Your GCS bucket name
 model_file_url = "https://drive.google.com/uc?id=1z2STdgv4KQyLhdCDKZmLcBZHlgATa3fj"
 model_local_path = "Pomegranate_disease_model.h5"
 
+
+# Add custom CSS for background and styling
+st.markdown(
+    """
+    <style>
+    body {
+        background-image: url("https://example.com/pomegranate_background.jpg"); /* Replace with actual image URL */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .stApp {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .sidebar .sidebar-content {
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+    }
+    h1, h2, h3 {
+        color: #800000; /* Pomegranate red */
+        text-align: center;
+    }
+    .stButton>button {
+        background-color: #800000;
+        color: white;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
+
+
 # Function to download the model from Google Drive
 def download_model_if_needed():
     if not os.path.exists(model_local_path):
