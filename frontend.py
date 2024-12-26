@@ -33,7 +33,7 @@ st.markdown(
     """
     <style>
     body {
-        background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fpomegranate-tree&psig=AOvVaw1PiS7MVCFa9GPrF3pzSPih&ust=1735320758886000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJi4mob8xYoDFQAAAAAdAAAAABAa') no-repeat center center fixed;
+        background: url('https://media.istockphoto.com/id/502425210/photo/ripe-pomegranates-on-tree.jpg?s=612x612&w=0&k=20&c=tUtnExISwNAsuGSjBEqthukhX1EoU8Dmvb03Df5WeZw=') no-repeat center center fixed;
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
