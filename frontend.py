@@ -51,10 +51,18 @@ st.markdown(
 
     /* Transparent overlay for sidebar content */
     [data-testid="stSidebar"] > div:first-child {
-        background-color: rgba(255, 255, 255, 0.4);
+        background-color: rgba(255, 255, 255, 0.8);
         border-radius: 10px;
         padding: 10px;
         filter: blur(8px);
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.6); /* Light overlay for text readability */
+        z-index: 1;
     }
     
     .sidebar .sidebar-content {
