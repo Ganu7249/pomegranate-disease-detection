@@ -39,13 +39,13 @@ st.markdown(
         background-attachment: fixed;
     }
     .stApp {
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.6);
         padding: 20px;
         border-radius: 10px;
     }
 
     [data-testid="stSidebar"] {
-        background: url('https://img.khetivyapar.com/images/news/1704206783-pomagronet-tree-branch-garden.jpg') no-repeat center center fixed;
+        /*background: url('https://img.khetivyapar.com/images/news/1704206783-pomagronet-tree-branch-garden.jpg') no-repeat center center fixed;*/
         background-size: cover;
     }
 
