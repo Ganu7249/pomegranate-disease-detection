@@ -189,7 +189,7 @@ if selected == "Disease Recognition":
 
             # Predict disease
             result_index = model_prediction(test_image)
-            class_name = ["Anthracnose", "Cercospora", "Healthy"]
+            class_name = ["Anthracnose","Bacterial Blight", "Cercospora", "Healthy"]
             predicted_class = class_name[result_index]
 
             # Generate unique filename
