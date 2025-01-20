@@ -7,3 +7,4 @@ Pillow
 storage
 google-cloud-storage
 requests
+gdown
