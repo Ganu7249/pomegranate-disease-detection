@@ -117,9 +117,14 @@ st.markdown(
 # Function to download the model from Google Drive
 def download_model_if_needed():
     if not os.path.exists(model_local_path):
-        with st.spinner("Loading model..."):
-            r = requests.get(model_file_url, allow_redirects=True)
-            open(model_local_path, 'wb').write(r.content)
+        try:
+            with st.spinner("Downloading model..."):
+                r = requests.get(model_file_url, allow_redirects=True)
+                r.raise_for_status()  # Raise an exception for bad status codes
+                with open(model_local_path, 'wb') as f:
+                    f.write(r.content)
+        except requests.exceptions.RequestException as e:
+            st.error(f"Error downloading model: {e}")
 
 # Function to upload to Google Cloud Storage
 def upload_to_gcs(image_data, filename, prediction):
