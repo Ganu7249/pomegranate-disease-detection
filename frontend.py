@@ -24,107 +24,15 @@ st.set_page_config(page_title='Detect!t', page_icon="./letter-d.png", initial_si
 BUCKET_NAME = "pomegranatedetectionrecords"  # Your GCS bucket name
 
 # Model file details
-model_file_url = "https://drive.google.com/file/d/1z2STdgv4KQyLhdCDKZmLcBZHlgATa3fj/view?usp=sharing"
+model_file_url = "https://drive.google.com/uc?id=1z2STdgv4KQyLhdCDKZmLcBZHlgATa3fj"
 model_local_path = "Pomegranate_disease_model.h5"
-
-
-# Add custom CSS for background and styling
-st.markdown(
-    """
-    <style>
-    body {
-        background: url('https://media.istockphoto.com/id/502425210/photo/ripe-pomegranates-on-tree.jpg?s=612x612&w=0&k=20&c=tUtnExISwNAsuGSjBEqthukhX1EoU8Dmvb03Df5WeZw=') no-repeat center center fixed;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-    .stApp {
-        background-color: rgba(255, 255, 255, 0.6);
-        padding: 20px;
-        border-radius: 10px;
-    }
-
-    [data-testid="stSidebar"] {
-        /*background: url('https://media.istockphoto.com/id/1406206642/photo/pomegranate-with-seeds-and-half-slice-flying-in-the-air-isolated-on-white.jpg?s=612x612&w=0&k=20&c=N5fBXomSgCGLaFok_3aK7o7i1-oWEEhaFEGvzZ7ZsBk=') no-repeat center center fixed;*/
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed
-    }
-
-    /* Transparent overlay for sidebar content */
-    [data-testid="stSidebar"] > div:first-child {
-        border-radius: 10px;
-        padding: 10px;
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(255, 255, 255, 0.1); /* Light overlay for text readability */
-        z-index: 1;
-    }
-    
-    .sidebar .sidebar-content {
-        background: rgba(255, 255, 255, 0.9);
-        border-radius: 10px;
-    }
-    h1, h2, h3 {
-        color: #800000; /* Pomegranate red */
-        text-align: center;
-    }
-    .stButton>button {
-        background-color: #800000;
-        color: white;
-        border-radius: 5px;
-        font-size: 16px;
-        font-weight: bold;
-    }
-    /* Text Styling in Sidebar */
-    [data-testid="stSidebar"] h1, [data-testid="stSidebar"] h2, [data-testid="stSidebar"] h3, 
-    [data-testid="stSidebar"] label, [data-testid="stSidebar"] .css-1cpxqw2 {
-        color: #800000; /* Pomegranate red for headings */
-        font-weight: bold;
-    }
-
-    /* Buttons in Sidebar */
-    [data-testid="stSidebar"] .stButton>button {
-        background-color: #800000; /* Pomegranate red background */
-        color: white; /* White text for better visibility */
-        font-size: 16px;
-        border: none;
-        font-weight: bold;
-        border-radius: 5px;
-        padding: 8px 16px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    [data-testid="stSidebar"] .stButton>button:hover {
-        background-color: #a00000; /* Slightly darker red on hover */
-    }
-
-
-    
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
-
-
 
 # Function to download the model from Google Drive
 def download_model_if_needed():
     if not os.path.exists(model_local_path):
-        try:
-            with st.spinner("Downloading model..."):
-                r = requests.get(model_file_url, allow_redirects=True)
-                r.raise_for_status()  # Raise an exception for bad status codes
-                with open(model_local_path, 'wb') as f:
-                    f.write(r.content)
-        except requests.exceptions.RequestException as e:
-            st.error(f"Error downloading model: {e}")
+        with st.spinner("Loading model..."):
+            r = requests.get(model_file_url, allow_redirects=True)
+            open(model_local_path, 'wb').write(r.content)
 
 # Function to upload to Google Cloud Storage
 def upload_to_gcs(image_data, filename, prediction):
@@ -164,8 +72,8 @@ with st.sidebar:
 
 # Main page
 if selected == "Disease Recognition":
-    st.header("Welcome to ADCET AgroCare ")
-    st.subheader("Test Your Pomegranate:")
+    st.header("Disease Recognition")
+    st.subheader("Test Your Fruit:")
     test_images = []
 
     option = st.selectbox('Choose an input Image option:',
@@ -194,7 +102,7 @@ if selected == "Disease Recognition":
 
             # Predict disease
             result_index = model_prediction(test_image)
-            class_name = ["Anthracnose","Bacterial Blight", "Cercospora", "Healthy"]
+            class_name = ["Anthracnose", "Cercospora", "Healthy"]
             predicted_class = class_name[result_index]
 
             # Generate unique filename
