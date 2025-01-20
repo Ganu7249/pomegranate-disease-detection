@@ -24,7 +24,7 @@ st.set_page_config(page_title='Detect!t', page_icon="./letter-d.png", initial_si
 BUCKET_NAME = "pomegranatedetectionrecords"  # Your GCS bucket name
 
 # Model file details
-model_file_url = "https://drive.google.com/file/d/1z2STdgv4KQyLhdCDKZmLcBZHlgATa3fj/view?usp=drive_link"
+model_file_url = "https://drive.google.com/file/d/1z2STdgv4KQyLhdCDKZmLcBZHlgATa3fj/view?usp=sharing"
 model_local_path = "Pomegranate_disease_model.h5"
 
 
