@@ -82,17 +82,17 @@ if selected == "Disease Recognition":
     if option == "Upload":
         test_images = st.file_uploader("Choose Image(s):", accept_multiple_files=True)
         if st.button("Show Images"):
-            st.image(test_images, width=4, use_column_width=True)
+            st.image(test_images, width=4, use_container_width =True)
 
     elif option == "Camera":
         test_images = [st.camera_input("Capture an Image:")]
         if st.button("Show Images"):
-            st.image(test_images, width=4, use_column_width=True)
+            st.image(test_images, width=4, use_container_width =True)
 
     if st.button("Predict"):
         for i, test_image in enumerate(test_images):
             st.write(f"Prediction for Image {i + 1}:")
-            st.image(test_image, width=4, use_column_width=True)
+            st.image(test_image, width=4, use_container_width =True)
 
             # Prepare image as byte stream
             image = Image.open(test_image)
