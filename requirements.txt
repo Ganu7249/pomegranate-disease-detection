@@ -8,11 +8,16 @@ storage
 google-cloud-storage
 requests
 gdown
-torch
-torchvision
+# Core dependencies
+streamlit
 tensorflow
+Pillow
 opencv-python
 numpy
 matplotlib
 pycocotools
+torch==2.1.0+cpu     # Or your appropriate torch version
+torchvision==0.16.0+cpu
+
+# Install Detectron2 AFTER torch
 git+https://github.com/facebookresearch/detectron2.git
