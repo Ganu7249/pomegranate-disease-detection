@@ -9,15 +9,27 @@ google-cloud-storage
 requests
 gdown
 # Core dependencies
-streamlit
-tensorflow
-Pillow
-opencv-python
+# Base ML and utility libraries
 numpy
+pillow
+opencv-python
 matplotlib
 pycocotools
-torch==2.1.0+cpu     # Or your appropriate torch version
-torchvision==0.16.0+cpu
 
-# Install Detectron2 AFTER torch
+# Streamlit and related UI
+streamlit
+streamlit-option-menu
+
+# Torch and vision (must come BEFORE detectron2)
+torch==2.1.0+cpu
+torchvision==0.16.0+cpu
+torchaudio==2.1.0+cpu
+# or use CUDA version if supported by your deployment:
+# torch==2.1.0+cu118
+# torchvision==0.16.0+cu118
+
+# Detectron2 (install after torch)
 git+https://github.com/facebookresearch/detectron2.git
+
+# TensorFlow (your classifier)
+tensorflow
