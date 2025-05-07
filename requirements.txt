@@ -8,3 +8,11 @@ storage
 google-cloud-storage
 requests
 gdown
+torch
+torchvision
+tensorflow
+opencv-python
+numpy
+matplotlib
+pycocotools
+git+https://github.com/facebookresearch/detectron2.git
