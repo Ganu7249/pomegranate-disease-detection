@@ -23,7 +23,7 @@ st.set_page_config(page_title='Detect!t', page_icon="./letter-d.png", initial_si
 BUCKET_NAME = "pomegranatedetectionrecords"
 
 # FastAPI endpoint
-API_URL = "https://YOUR_HF_SPACE_URL/api/predict"
+API_URL = "https://<ganeshkende>.huggingface.co/spaces/<pomegranate-disease-detection-app-backend>/predict"
 
 # Function to upload to Google Cloud Storage
 def upload_to_gcs(image_data, filename, prediction):
