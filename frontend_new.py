@@ -24,7 +24,7 @@ BUCKET_NAME = "pomegranatedetectionrecords"
 
 # FastAPI endpoint
 # API_URL = "https://ganeshkende.huggingface.co/spaces/pomegranate-disease-detection-app-backend/predict"
-API_URL = "https://ganeshkende-hf.hf.space/predict"
+API_URL = "https://ganeshkende-pomegranate-disease-detection-app-backend.hf.space/predict"
 
 # Function to upload to Google Cloud Storage
 def upload_to_gcs(image_data, filename, prediction):
